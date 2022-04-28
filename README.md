@@ -8,4 +8,4 @@ Integration
 6. Download postman collection.
 7. Import downloaded collection to test all endpoints.
 8. Change {{baseUrl}} to localhost URL.
-9. 
+
