@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "ed87c304-3c1a-4ec2-8edf-ad61bb9524af",
+		"name": "Mock API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:60475/api/product-request/debb34d6-4427-45ec-a370-cfa90f92e393",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "UHJvZHVjdEludkFkbWlu",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ProductInvAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FeedID\": \"a893rsfsw34985rnfkfu893\",   \r\n    \"ProductName\": \"Tube !\",\r\n    \"ProductCode\": \"ACC\",\r\n    \"Category\": \"Categroy1\",\r\n    \"ProductSize\": \"24\",\r\n    \"Price\": 23.44,\r\n    \"ProductDescription\": \"ProductDescription\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60475/api/product-request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60475",
+					"path": [
+						"api",
+						"product-request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:60475/api/product-request/debb34d6-4427-45ec-a370-cfa90f92e393 Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "UHJvZHVjdEludkFkbWlu",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ProductInvAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FeedID\": \"a893rsfsw34985rnfkfu893\",\r\n    \"ProductName\": \"Tube !\",\r\n    \"ProductCode\": \"ACC\",\r\n    \"Category\": \"Categroy1\",\r\n    \"ProductSize\": \"24\",\r\n    \"Price\": 23.44,\r\n    \"ProductDescription\": \"ProductDescription 10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60475/api/product-request/55e0bfbf-56a7-494b-84d7-f04c1cb3e557",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60475",
+					"path": [
+						"api",
+						"product-request",
+						"55e0bfbf-56a7-494b-84d7-f04c1cb3e557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:60475/api/product-request/debb34d6-4427-45ec-a370-cfa90f92e393 Copy 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "UHJvZHVjdEludkFkbWlu",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ProductInvAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60475/api/product-request/55e0bfbf-56a7-494b-84d7-f04c1cb3e557",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60475",
+					"path": [
+						"api",
+						"product-request",
+						"55e0bfbf-56a7-494b-84d7-f04c1cb3e557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:60475/api/product-request/debb34d6-4427-45ec-a370-cfa90f92e393 Copy 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "UHJvZHVjdEludkFkbWlu",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ProductInvAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60475/api/product-search/c2ab2d12-9449-4dad-a512-7747deff277d?page=0&sortby=ProductName,asc&size=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60475",
+					"path": [
+						"api",
+						"product-search",
+						"c2ab2d12-9449-4dad-a512-7747deff277d"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "sortby",
+							"value": "ProductName,asc"
+						},
+						{
+							"key": "size",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:60475/api/product-request/debb34d6-4427-45ec-a370-cfa90f92e393 Copy 4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "UHJvZHVjdEludkFkbWlu",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ProductInvAdmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60475/api/product-search?page=0&sortby=ProductName,asc&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60475",
+					"path": [
+						"api",
+						"product-search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "sortby",
+							"value": "ProductName,asc"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
